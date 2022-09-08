@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap");
+
+:root {
+  --primary: #351eff;
+  --seconday: #95d31a;
+  --tertiary: coral;
+  --another: grey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+h5 {
+  font-size: 1.2 rem;
+  font-weight: 400;
+}
+h6 {
+  color: #d8d8d8;
+}
+
+p {
+  font-size: 18px;
+}
+.nav-button {
+  margin-left: 60%;
+}
+.navbar {
+  font-size: 16px;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light.navbar-nav .nav-link {
+  padding: o 20px;
+  color: black;
+  transition: 0.4s ease;
+}
+.nav-item .nav-link:active {
+  color: blue;
+}
+.nav-item .nav-link {
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+}
+.nav-item .nav-link:hover {
+  background-color: aqua;
+}
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-icon i {
+  margin-left: 0.5rem;
+}
+@media only screen and (max-width: 992px) {
+  .nav-button {
+    margin: 10px;
+  }
+  .nav-icon {
+    justify-content: flex-start;
+    /* margin-left: 10px; */
+  }
+  .nav-icon i {
+    padding-left: 0.9rem;
+  }
+}
+
+#home {
+  margin-top: 110px;
+  background-image: url(../imgs/fasion6.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#home h1 span {
+  color: var(--seconday);
+}
+
+#home p {
+  font-size: 20px;
+}
+
+button {
+  font-size: 0.8rem;
+  font-weight: 900;
+  outline: none;
+  border: none;
+  background-color: var(--tertiary);
+  color: white;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+button:hover {
+  background-color: var(--seconday);
+}
+
+#brand,
+#new {
+  margin-top: 100px;
+}
+
+#new .one img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  object-fit: cover;
+}
+#new .one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#new .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--tertiary);
+  font-weight: bold;
+  transform: 0.4s ease;
+  opacity: 0.7;
+  background-color: rgb(1, 1, 1);
+  width: 100%;
+  height: 100%;
+}
+#new .one .details:hover {
+  background-color: var(--another);
+}
+#new .one:nth-child(1) .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#new .one:nth-child(2) .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#new .one:nth-child(3) .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* product */
+
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.product img {
+  transition: 0.3s ease;
+  height: 300px;
+}
+
+.product img:hover {
+  opacity: 0.7;
+}
+
+.product .buy-btn {
+  background-color: var(--primary);
+  transform: translateY(50px);
+  transition: 0.3s all;
+  opacity: 0;
+}
+.product:hover .buy-btn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+hr {
+  width: 30px;
+  min-height: 3px !important;
+  opacity: 1 !important;
+  background-color: var(--another);
+}
+.star {
+  padding: 10px 0;
+}
+.star i {
+  font-size: 0.9rem;
+  color: goldenrod;
+}
+
+#banner {
+  margin-top: 110px;
+  background-image: url(../imgs/fasion6.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 80px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#banner h1 {
+  color: var(--seconday);
+}
+
+footer {
+  background-color: var(--another);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+footer li {
+  padding-bottom: 4px;
+}
+
+footer li a {
+  font-size: 0.8rem;
+  text-transform: none;
+}
+
+footer li a:hover {
+  font-size: 0.8rem;
+  text-transform: none;
+  color: var(--seconday);
+}
+
+footer .copy-right a {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+  transition: 0.3s ease;
+  margin: 0 5px;
+}
+
+footer .copy-right a:hover {
+  color: white;
+  background-color: var(--secondary);
+}
+footer .copy-right img {
+  width: 30%;
+  background-color: white;
+}
+
+footer p {
+  color: white;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 16px;
+  margin-right: 10px;
+}
+.single-product input:focus {
+  outline: none;
+}
+
+/* Cart */
+
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart .product-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart th {
+  text-align: left;
+  padding: 5px 10px;
+  background-color: var(--seconday);
+}
+
+.cart td {
+  padding: 10px 20px;
+}
+.cart td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.cart td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+.cart td a {
+  color: var(--primary);
+}
+.cart .remove-btn {
+  color: var(--seconday);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.cart .edit-btn {
+  color: var(--seconday);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.cart .product-info {
+  margin: 3px;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-total table {
+  width: 100%;
+  max-width: 500px;
+  border-top: 3px solid var(--seconday);
+}
+
+td:last-child {
+  text-align: right;
+}
+th:last-child {
+  text-align: left;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* login */
+
+#login-form {
+  width: 50%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--seconday);
+}
+
+#login-form input {
+  width: 50%;
+  margin: 5px auto;
+}
+
+#login-form #login-btn {
+  background-color: var(--seconday);
+  color: white;
+}
+
+#login-form #register-url {
+  color: var(--seconday);
+}
+
+/* register */
+
+#register-form {
+  width: 50%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--seconday);
+}
+
+#register-form input {
+  width: 50%;
+  margin: 5px auto;
+}
+
+#register-form #register-btn {
+  background-color: var(--seconday);
+  color: white;
+}
+
+#register-form #login-url {
+  color: var(--seconday);
+}
+
+/* account  */
+
+#account-form {
+  width: 50%;
+  margin: 35px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+#account-form input {
+  margin: 5px auto;
+}
+
+#account-form #change-pass-btn {
+  color: white;
+  background-color: var(--seconday);
+}
+
+.account-info #order-btn,
+#logout-btn {
+  color: var(--seconday);
+  text-decoration: none;
+}
+
+/* orders */
+.order table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.order .product-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order th {
+  padding: 5px 10px;
+  color: white;
+  background-color: var(--seconday);
+  text-align: left;
+}
+
+.cart td {
+  padding: 10px 20px;
+}
+
+.order td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+/* checkout */
+
+#checkout-form .checkout-small-element {
+  display: inline-block;
+  width: 48%;
+  margin: 10px auto;
+}
+
+#checkout-form .checkout-large-element {
+  width: 95%;
+}
+
+#checkout-form .checkout-btn-container {
+  margin: 10px;
+  text-align: right;
+  margin-right: 40px;
+}
+
+#checkout-form #checkout-btn {
+  color: white;
+  background-color: var(--seconday);
+}
+
+/* Contact */
+#contact span {
+  color: var(--seconday);
+}
