@@ -1,3 +1,18 @@
+/*  */
+INSERT INTO `products`( `product_name`,`product_category`,`product_description`, `product_image`,`product_image2`,`product_image3`,`product_image4`,`product_price`,`product_special_offer`,`product_color`) VALUES( 'Versace cap', 'cap', 'smart cap', 'versacecap.jpeg', 'versacecap.jpeg', 'versacecap.jpeg', 'versacecap.jpeg', 300, 0, 'black' );
+INSERT INTO `products`( `product_name`,`product_category`,`product_description`, `product_image`,`product_image2`,`product_image3`,`product_image4`,`product_price`,`product_special_offer`,`product_color`) VALUES( 'Versace cap', 'cap', 'smart cap', 'versacecap.jpeg', 'versacecap.jpeg', 'versacecap.jpeg', 'versacecap.jpeg', 300, 0, 'black' );
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
