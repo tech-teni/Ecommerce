@@ -21,17 +21,18 @@ include('connection.php');
 
 
 
- $stmt = "INSERT INTO orders (order_cost,order_status,user_id,user_phone,user_city,user_address,order_date) VALUES($order_cost, $order_status, $user_id, $phone,  $city , $address, $order_date, $email);";
- $order = mysqli_query($conn, $stmt );
+//  $stmt = "INSERT INTO orders (order_cost,order_status,user_id,user_phone,user_city,user_address,order_date, email) VALUES($order_cost, '$order_status', $user_id, $phone,  '$city' , '$address', $order_date, '$email');";
+//  $order = mysqli_query($conn, $stmt );
 
 
 //  $stmt = "INSERT INTO orders (order_cost, user_id) VALUE($order_cost,$user_id);";
 //  $order = mysqli_query($conn, $stmt );
 
 
-// $stmt = $conn->prepare("INSERT INTO orders (order_cost,order_status,user_id,user_phone,user_city,user_address,order_date) VALUES(?, ?, ?, ?, ? , ?, ?,?);");
-// $stmt->bind_param("isiissss", $order_cost, $order_status, $user_id, $phone,  $city , $address, $order_date, $email);
-// $stmt->execute();
+ $stmt = "INSERT INTO `orders` ( `order_cost`, `order_status`, `user_id`, `user_phone`, `user_city`, `user_address`, `order_date`, `email`) VALUES ('$order_cost', '$order_status', ' $user_id', '$phone', '$city', '$address', ' $order_date', '$email');";
+ $order = mysqli_query($conn, $stmt );
+
+
  echo  $stmt;
  print_r($conn);
 
@@ -39,8 +40,11 @@ include('connection.php');
         // lets get the order ID to create order_items
 
     //3- issue new order and store order info in database
+// ******************************************************* correct syntax
 
 
+
+// ***********************************************
 
     // 4- store each single item in order_items database
 
