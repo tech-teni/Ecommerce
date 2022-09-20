@@ -114,7 +114,8 @@ p {
   font-size: 20px;
 }
 
-button {
+button,
+.button {
   font-size: 0.8rem;
   font-weight: 900;
   outline: none;
@@ -371,11 +372,11 @@ footer p {
   border-top: 3px solid var(--seconday);
 }
 
-td:last-child {
-  text-align: right;
-}
+/* td:last-child {
+  text-align: center;
+} */
 th:last-child {
-  text-align: left;
+  text-align: right;
 }
 
 .checkout-container {
